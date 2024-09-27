@@ -146,90 +146,90 @@ st.markdown('---')
 # Table Display
 st.html(f'''<table style="width: 100%;">
     <tr>
-        <th style="border: 1px solid white; padding: 10px;">ELEMEN</th>
-        <th style="border: 1px solid white; padding: 10px;">ASPEK</th>
-        <th style="border: 1px solid white; padding: 10px;" colspan=2>SUKAN/PERMAINAN</th>
-        <th style="border: 1px solid white; padding: 10px;" colspan=2>KELAB/PERSATUAN</th>
-        <th style="border: 1px solid white; padding: 10px;" colspan=2>BADAN BERUNIFORM</th>
-        <th style="border: 1px solid white; padding: 10px;">EKSTRA KURIKULUM</th>
+        <th style="border: 1px solid grey; padding: 10px;">ELEMEN</th>
+        <th style="border: 1px solid grey; padding: 10px;">ASPEK</th>
+        <th style="border: 1px solid grey; padding: 10px;" colspan=2>SUKAN/PERMAINAN</th>
+        <th style="border: 1px solid grey; padding: 10px;" colspan=2>KELAB/PERSATUAN</th>
+        <th style="border: 1px solid grey; padding: 10px;" colspan=2>BADAN BERUNIFORM</th>
+        <th style="border: 1px solid grey; padding: 10px;">EKSTRA KURIKULUM</th>
     </tr>
     <tr>
-        <td style="border: 1px solid white; padding: 10px;" rowspan=4>PENGLIBATAN</td>
-        <td style="border: 1px solid white; padding: 10px;">Kehadiran</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Kehadiran Kelab'][0]} / 20</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Kehadiran Kelab'][0] / 20 * 50}</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Kehadiran Kelab'][1]} / 20</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Kehadiran Kelab'][1] / 20 * 50}</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Kehadiran Kelab'][2]} / 20</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Kehadiran Kelab'][2] / 20 * 50}</td>
-        <td style="border: 1px solid white; padding: 10px;" rowspan=4>{user_data['Ekstra Kurikulum Perkhidmatan']}</td>
+        <td style="border: 1px solid grey; padding: 10px;" rowspan=4>PENGLIBATAN</td>
+        <td style="border: 1px solid grey; padding: 10px;">Kehadiran</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Kehadiran Kelab'][0]} / 20</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Kehadiran Kelab'][0] / 20 * 50}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Kehadiran Kelab'][1]} / 20</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Kehadiran Kelab'][1] / 20 * 50}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Kehadiran Kelab'][2]} / 20</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Kehadiran Kelab'][2] / 20 * 50}</td>
+        <td style="border: 1px solid grey; padding: 10px;" rowspan=4>{user_data['Ekstra Kurikulum Perkhidmatan']}</td>
     </tr>
     <tr>
-        <td style="border: 1px solid white; padding: 10px;">Jawatan</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Jawatan Kelab'][0]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{JAWATAN_KELAB[user_data['Jawatan Kelab'][0]]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Jawatan Kelab'][1]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{JAWATAN_KELAB[user_data['Jawatan Kelab'][1]]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Jawatan Kelab'][2]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{JAWATAN_KELAB[user_data['Jawatan Kelab'][2]]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">Jawatan</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Jawatan Kelab'][0]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{JAWATAN_KELAB[user_data['Jawatan Kelab'][0]]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Jawatan Kelab'][1]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{JAWATAN_KELAB[user_data['Jawatan Kelab'][1]]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Jawatan Kelab'][2]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{JAWATAN_KELAB[user_data['Jawatan Kelab'][2]]}</td>
     </tr>
     <tr>
-        <td style="border: 1px solid white; padding: 10px;">Peringkat</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Peringkat Kelab'][0]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{PERINGKAT_KELAB[user_data['Peringkat Kelab'][0]]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Peringkat Kelab'][1]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{PERINGKAT_KELAB[user_data['Peringkat Kelab'][1]]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Peringkat Kelab'][2]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{PERINGKAT_KELAB[user_data['Peringkat Kelab'][2]]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">Peringkat</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Peringkat Kelab'][0]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{PERINGKAT_KELAB[user_data['Peringkat Kelab'][0]]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Peringkat Kelab'][1]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{PERINGKAT_KELAB[user_data['Peringkat Kelab'][1]]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Peringkat Kelab'][2]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{PERINGKAT_KELAB[user_data['Peringkat Kelab'][2]]}</td>
     </tr>
     <tr>
-        <td style="border: 1px solid white; padding: 10px;">Pencapaian</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Peringkat Pencapaian Kelab'][0]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{PENCAPAIAN_KELAB[user_data['Peringkat Pencapaian Kelab'][0]]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Peringkat Pencapaian Kelab'][1]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{PENCAPAIAN_KELAB[user_data['Peringkat Pencapaian Kelab'][1]]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Peringkat Pencapaian Kelab'][2]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{PENCAPAIAN_KELAB[user_data['Peringkat Pencapaian Kelab'][2]]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">Pencapaian</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Peringkat Pencapaian Kelab'][0]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{PENCAPAIAN_KELAB[user_data['Peringkat Pencapaian Kelab'][0]]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Peringkat Pencapaian Kelab'][1]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{PENCAPAIAN_KELAB[user_data['Peringkat Pencapaian Kelab'][1]]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Peringkat Pencapaian Kelab'][2]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{PENCAPAIAN_KELAB[user_data['Peringkat Pencapaian Kelab'][2]]}</td>
     </tr>
     <tr>
-        <td style="border: 1px solid white; padding: 10px;" rowspan=3>PENGURUSAN PROJEK</td>
-        <td style="border: 1px solid white; padding: 10px;">Nama Projek</td>
-        <td style="border: 1px solid white; padding: 10px;" colspan=2>{user_data['Nama Projek'][0]}</td>
-        <td style="border: 1px solid white; padding: 10px;" colspan=2>{user_data['Nama Projek'][1]}</td>
-        <td style="border: 1px solid white; padding: 10px;" colspan=2>{user_data['Nama Projek'][2]}</td>
-        <td style="border: 1px solid white; padding: 10px;" rowspan=3>{user_data['Ekstra Kurikulum Anugerah Khas']}</td>
+        <td style="border: 1px solid grey; padding: 10px;" rowspan=3>PENGURUSAN PROJEK</td>
+        <td style="border: 1px solid grey; padding: 10px;">Nama Projek</td>
+        <td style="border: 1px solid grey; padding: 10px;" colspan=2>{user_data['Nama Projek'][0]}</td>
+        <td style="border: 1px solid grey; padding: 10px;" colspan=2>{user_data['Nama Projek'][1]}</td>
+        <td style="border: 1px solid grey; padding: 10px;" colspan=2>{user_data['Nama Projek'][2]}</td>
+        <td style="border: 1px solid grey; padding: 10px;" rowspan=3>{user_data['Ekstra Kurikulum Anugerah Khas']}</td>
     </tr>    
     <tr>
-        <td style="border: 1px solid white; padding: 10px;">Jawatan</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Jawatan Projek'][0]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{JAWATAN_PROJEK[user_data['Jawatan Projek'][0]]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Jawatan Projek'][1]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{JAWATAN_PROJEK[user_data['Jawatan Projek'][1]]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Jawatan Projek'][2]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{JAWATAN_PROJEK[user_data['Jawatan Projek'][2]]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">Jawatan</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Jawatan Projek'][0]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{JAWATAN_PROJEK[user_data['Jawatan Projek'][0]]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Jawatan Projek'][1]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{JAWATAN_PROJEK[user_data['Jawatan Projek'][1]]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Jawatan Projek'][2]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{JAWATAN_PROJEK[user_data['Jawatan Projek'][2]]}</td>
     </tr>
     <tr>
-        <td style="border: 1px solid white; padding: 10px;">Peringkat</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Peringkat Projek'][0]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{PERINGKAT_PROJEK[user_data['Peringkat Projek'][0]]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Peringkat Projek'][1]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{PERINGKAT_PROJEK[user_data['Peringkat Projek'][1]]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{user_data['Peringkat Projek'][2]}</td>
-        <td style="border: 1px solid white; padding: 10px;">{PERINGKAT_PROJEK[user_data['Peringkat Projek'][2]]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">Peringkat</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Peringkat Projek'][0]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{PERINGKAT_PROJEK[user_data['Peringkat Projek'][0]]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Peringkat Projek'][1]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{PERINGKAT_PROJEK[user_data['Peringkat Projek'][1]]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{user_data['Peringkat Projek'][2]}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{PERINGKAT_PROJEK[user_data['Peringkat Projek'][2]]}</td>
     </tr>
     <tr>
-        <td style="border: 1px solid white; padding: 10px;" colspan=2>SKOR</td>
-        <td style="border: 1px solid white; padding: 10px;" colspan=2>{get_total(0)}</td>
-        <td style="border: 1px solid white; padding: 10px;" colspan=2>{get_total(1)}</td>
-        <td style="border: 1px solid white; padding: 10px;" colspan=2>{get_total(2)}</td>
-        <td style="border: 1px solid white; padding: 10px;">{max(
+        <td style="border: 1px solid grey; padding: 10px;" colspan=2>SKOR</td>
+        <td style="border: 1px solid grey; padding: 10px;" colspan=2>{get_total(0)}</td>
+        <td style="border: 1px solid grey; padding: 10px;" colspan=2>{get_total(1)}</td>
+        <td style="border: 1px solid grey; padding: 10px;" colspan=2>{get_total(2)}</td>
+        <td style="border: 1px solid grey; padding: 10px;">{max(
             EXTRA_KOKO_PERKHIDMATAN[user_data['Ekstra Kurikulum Perkhidmatan']],
             EXTRA_KOKO_ANUGERAH[user_data['Ekstra Kurikulum Anugerah Khas']],
         )}</td>
     </tr>
     <tr>
-        <td style="border: 1px solid white; padding: 10px;" colspan=2>JUMLAH SKOR (%)</td>
-        <td style="border: 1px solid white; padding: 10px;" colspan=7>{sum(
+        <td style="border: 1px solid grey; padding: 10px;" colspan=2>JUMLAH SKOR (%)</td>
+        <td style="border: 1px solid grey; padding: 10px;" colspan=7>{sum(
             sorted([get_total(0), get_total(1), get_total(2)], reverse=True)[:2]
         ) / 2 + max(
             EXTRA_KOKO_PERKHIDMATAN[user_data['Ekstra Kurikulum Perkhidmatan']],
@@ -238,3 +238,6 @@ st.html(f'''<table style="width: 100%;">
     </tr>
 </table>
 ''')
+
+st.markdown('---')
+st.markdown('Copyright © 2024 JYJH. All Rights Reserved')

@@ -11,7 +11,7 @@ def user_login():
             st.text_input("Password", type="password", key="password")
             st.form_submit_button("Log in", on_click=password_entered)
             st.markdown('---')
-            st.markdown('Copyright © 2024 JYJH, Inc. All Rights Reserved')
+            st.markdown('Copyright © 2024 JYJH. All Rights Reserved')
 
     def password_entered():
         if st.session_state["username"] == st.secrets["username"] and hmac.compare_digest(st.session_state["password"], st.secrets["password"]):
